@@ -7,6 +7,22 @@ import urllib.request
 from typing import List
 
 
+def _github_get_sha(token: str, repo: str, branch: str, path: str) -> str:
+    url_path = urllib.parse.quote(path.replace("\\", "/"))
+    url = f"https://api.github.com/repos/{repo}/contents/{url_path}?ref={branch}"
+    req = urllib.request.Request(url, method="GET")
+    req.add_header("Authorization", f"token {token}")
+    req.add_header("Accept", "application/vnd.github+json")
+    try:
+        with urllib.request.urlopen(req) as resp:
+            if resp.status != 200:
+                return ""
+            data = json.loads(resp.read().decode("utf-8"))
+            return data.get("sha", "")
+    except Exception:
+        return ""
+
+
 def github_put_file(token: str, repo: str, branch: str, path: str, content_bytes: bytes, message: str) -> None:
     url_path = urllib.parse.quote(path.replace("\\", "/"))
     url = f"https://api.github.com/repos/{repo}/contents/{url_path}?branch={branch}"
@@ -15,6 +31,9 @@ def github_put_file(token: str, repo: str, branch: str, path: str, content_bytes
         "content": base64.b64encode(content_bytes).decode("ascii"),
         "branch": branch,
     }
+    sha = _github_get_sha(token, repo, branch, path)
+    if sha:
+        payload["sha"] = sha
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=data, method="PUT")
     req.add_header("Authorization", f"token {token}")
