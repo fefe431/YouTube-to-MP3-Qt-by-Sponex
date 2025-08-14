@@ -1,6 +1,12 @@
-YouTube to MP3 (Qt) — by Sponex
+<p align="center">
+  <img src="assets/cover.svg" alt="YouTube to MP3 (Qt) — by Sponex"/>
+</p>
 
-A fast, modern YouTube-to-MP3 desktop app built with Python, yt-dlp, ffmpeg, and Qt (PySide6).
+<h2 align="center">YouTube to MP3 (Qt) — by Sponex</h2>
+
+<p align="center">
+  A fast, modern YouTube-to-MP3 desktop app built with Python, yt-dlp, ffmpeg, and Qt (PySide6).
+</p>
 
 - Clean native UI with queue, progress, speed, ETA, size
 - Supports multiple inputs (URLs or searches)
@@ -9,7 +15,7 @@ A fast, modern YouTube-to-MP3 desktop app built with Python, yt-dlp, ffmpeg, and
 - Duplicate protection (session + persistent archive)
 - Library tab lists downloaded tracks; double-click to open
 
-Setup (Windows)
+## Setup (Windows)
 
 1) Create venv and install deps:
 ```powershell
@@ -25,7 +31,7 @@ python -m venv .venv
 .venv\Scripts\python qt_app.py
 ```
 
-Usage
+## Usage
 
 - Paste YouTube URLs to download that exact video to MP3.
 - Paste plain text to search (e.g. "artist - song") — the top result is downloaded.
@@ -34,14 +40,14 @@ Usage
 - See progress (percent, speed, ETA, size) in the queue.
 - Library tab shows downloaded tracks; double-click to open.
 
-CLI (optional)
+## CLI (optional)
 
 You can also use the CLI downloader:
 ```powershell
 .venv\Scripts\python main.py "https://www.youtube.com/watch?v=VIDEO_ID" --bitrate 320
 ```
 
-Donate / Support
+## Donate / Support
 
 If this project helps you, consider supporting development:
 - PayPal: viorelstanculet1234@outlook.com
