@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6200EA"/>
+      <stop offset="100%" stop-color="#303F9F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="420" fill="url(#g)" rx="24"/>
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" fill="#fff">
+    <text x="80" y="170" font-size="64" font-weight="700">YouTube to MP3 — Qt</text>
+    <text x="80" y="230" font-size="28" opacity="0.95">Fast, modern downloader powered by yt-dlp + ffmpeg</text>
+    <text x="80" y="300" font-size="24" opacity="0.85">Made by Sponex • v1.0.0</text>
+  </g>
+</svg>
+
